@@ -12,6 +12,11 @@ pipeline {
                 echo 'bye World'
             }
         }
+         stage('java') {
+            steps {
+                bat 'java --version'
+            }
+        }
         stage('maven version') {
             steps {
                 bat 'mvn --version'
