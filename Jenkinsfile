@@ -17,10 +17,6 @@ pipeline {
                 bat 'java --version'
             }
         }
-        stage('maven version') {
-            steps {
-                bat 'mvn --version'
-            }
-        }
+        
     }
 }
