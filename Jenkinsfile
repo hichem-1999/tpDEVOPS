@@ -12,5 +12,10 @@ pipeline {
                 echo 'bye World'
             }
         }
+        stage('maven version') {
+            steps {
+                mvn --version
+            }
+        }
     }
 }
